@@ -531,9 +531,11 @@ padding: 30px;
 #translate-button-wrapper{
   position: relative;
   left: 1%;
-  top: -1%;
+ 
 }
-
+body{
+  overflow-x: hidden;
+}
 
 
 #languages{
@@ -551,7 +553,7 @@ padding: 30px;
 #upcontainer{
   height: 80px;width: 300px;
   background-color: white;position: absolute;padding: 10px;
-  left: 10%;top: 50%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  left: 10%;top: 10%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
 }
 #foots{
   background-color:#780b54de; height: 400px;color: white;height: 370px;
@@ -582,7 +584,7 @@ top: 20%;
 }
 #upcontainer3{height: 200px;width: 550px;
 background-color: white;position: absolute;padding: 20px;
-left: 6%;top: 50%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+left: 6%;top: 12%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
 }
 #calculated{
   display: none;
@@ -594,8 +596,14 @@ left: 6%;top: 50%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 
 }
 #upcontainer4{height: 100px;width: 300px;
   background-color: white;position: absolute;padding: 20px;
-  left: 6%;top: 50%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  left: 6%;top: 9%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
   }
+  #upcontainer5{height: 100px;width: 300px;
+    background-color: white;padding: 20px;
+       box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+    position: relative;top: 20%;left: 10%;
+      }
+
   #divbody{
     margin: 10px;padding: 40px;
   }
