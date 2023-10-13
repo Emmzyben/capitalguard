@@ -523,8 +523,13 @@ padding: 30px;
 .bot11{
   position: absolute;left: 71%;top: 1.7%;border: 1px solid #ffffffde;border-radius: 5px;
 }
-#google_translate_element{
-  position: absolute;left: 75%;top: 0%;
+
+#links{
+  display: flex;
+  flex-direction: row;
+}
+#links > div{
+  margin-right: 10px;
 }
 
 

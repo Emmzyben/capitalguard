@@ -7,13 +7,13 @@
     height: 100px;
 }
 .bot1{
-position: absolute;left: 40%;top: 7%;
+position: absolute;left: 40%;top: 1%;
 }
 .bot11{
-  position: absolute;left: 70%;top: 7%;
+  position: absolute;left: 70%;top: 1%;
   }
 .bot2{
-position: absolute;left: 55%;top: 7%;
+position: absolute;left: 55%;top: 1%;
 }
 #languages{
 display: none;
@@ -265,7 +265,7 @@ width: 80px;
 position: absolute;
 height: 355px;
 width: 100%;
-top: 60%;
+top: 9%;
 left: 0;
 }
 #foots{
@@ -618,7 +618,7 @@ padding: 20px;
   position: absolute;
   height: 355px;
   width: 100%;
-  top: 60%;
+  top: 6.5%;
   left: 0;
 }
 #foots{

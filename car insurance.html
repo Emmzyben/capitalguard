@@ -11,7 +11,8 @@
   }
 
 </style>
-<!--ICON-->
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <link rel="shortcut icon" href="images/newlogo.jpg">
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="style1.css">
@@ -23,59 +24,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
   <body>
-   <div id="starter">
-  <h3 id="needhelp">Need help? Contact Us</h3>
- <p id="p1"><a style="color: white;"  href="mailto:capitalg@capitalguard.cc"> capitalg@capitalguard.cc</a></p>
-   <i  class="material-icons" style="padding-left:255px ;position: relative;top: -45%;color: #f31a1ade ;">mail_outline</i>
-   <button id="botnz" class="bot1"><a href="sign-in.html" style="color: white;">Sign in</a></button>
+    <div id="starter">
+      <h3 id="needhelp">Need help? Contact Us:  <a style="color: white;font-weight: lighter;font-size: small;"  href="mailto:capitalg@capitalguard.cc"> capitalg@capitalguard.cc</a></h3>
+     
+       <i  class="material-icons" style="padding-left:255px ;position: relative;top: -45%;color: #f31a1ade ;">mail_outline</i>
+       <button id="botnz" class="bot1"><a href="sign-in.html" style="color: white;">Sign in</a></button>
        <button id="botnzz" class="bot11"><a href="register.html" style="color: white;">Sign up</a></button>
        <button id="botnz" class="bot2"><a href="index.html" style="color: white;">Home</a></button>
-   <select id="languages" name="languages"   >
-      <option>Select Language</option>
-      <option value="af">Afrikaans</option>
-      <option value="sq">Albanian - shqip</option>
-      <option value="ar">Arabic - ةيبرعلا>/option>
-      <option value="hy">Armenian - հայերեն</option>
-      <option value="ast">Asturian - asturianu</option>
-      <option value="az">Azerbaijani - azərbaycan dili</option>
-      <option value="be">Belarusian - беларуская</option>
-      <option value="bs">Bosnian - bosanski</option>
-      <option value="bg">Bulgarian - български</option>
-      <option value="ca">Catalan - català</option>
-      <option value="zh">Chinese - 中文</option>
-      <option value="co">Corsican</option>
-      <option value="hr">Croatian - hrvatski</option>
-      <option value="cs">Czech - čeština</option>
-      <option value="da">Danish - dansk</option>
-      <option value="nl">Dutch - Nederlands</option>
-      <option value="en">English</option>
-      <option value="en-GB">English (United Kingdom)</option>
-      <option value="en-US">English (United States)</option>
-      <option value="et">Estonian - eesti</option> 
-      <option value="fil">Filipino</option>
-      <option value="fi">Finnish - suomi</option>
-      <option value="fr">French - français</option>
-      <option value="ka">Georgian - ქართული</option>
-      <option value="de">German - Deutsch</option>
-      <option value="de-AT">German (Austria) - Deutsch (Österreich)</option>
-      <option value="el">Greek - Ελληνικά</option>
-      <option value="hu">Hungarian - magyar</option>
-<option value="is">Icelandic - íslenska</option>
-<option value="id">Indonesian - Indonesia</option>
-<option value="ga">Irish - Gaeilge</option>
-<option value="it-IT">Italian (Italy) - italiano (Italia)</option>
-<option value="ja">Japanese - 日本語</option>
-<option value="la">Latin</option>
-<option value="mk">Macedonian - македонски</option>
-<option value="mt">Maltese - Malti</option>
-<option value="pl">Polish - polski</option>
-<option value="pt">Portuguese - português</option>
-<option value="ru">Russian - русский</option>
-<option value="es">Spanish - español</option>
-<option value="sw">Swahili - Kiswahili</option>
-<option value="tr">Turkish - Türkçe</option>
-      </select>
-  </div>
+       <div id="google_translate_element"></div>
+       <script type="text/javascript">
+       function googleTranslateElementInit() {
+         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+       }
+       </script>
+    
+      </div>
+     
  
   <div style="position: sticky;top: 0;background-color: #fafafb;height: 80px; z-index: 5000;box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.998),  0 0px 5px 0 rgba(0, 0, 0, 0.19)" >
     <img src="images/newlogo.jpg" id="ingo">
