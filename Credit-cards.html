@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--TITLE-->
+<title>Credit cards</title>
+<style>
+  body{
+    font-family: "Inter";
+    font-size: 14px;
+  }
+
+</style>
+<!--ICON-->
+<link rel="shortcut icon" href="images/newlogo.jpg">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="Responsive.css">
+<link href="https://fonts.googleapis.com/icon?family=Inter" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  </head>
+  <body>
+   <div id="starter">
+  <h3 id="needhelp">Need help? Contact Us</h3>
+ <p id="p1"><a style="color: white;"  href="mailto:capitalg@capitalguard.cc"> capitalg@capitalguard.cc</a></p>
+   <i  class="material-icons" style="padding-left:255px ;position: relative;top: -45%;color: #f31a1ade ;">mail_outline</i>
+   <button id="botnz" class="bot1"><a href="sign-in.html" style="color: white;">Sign in</a></button>
+       <button id="botnzz" class="bot11"><a href="register.html" style="color: white;">Sign up</a></button>
+       <button id="botnz" class="bot2"><a href="index.html" style="color: white;">Home</a></button>
+   <select id="languages" name="languages"   >
+      <option>Select Language</option>
+      <option value="af">Afrikaans</option>
+      <option value="sq">Albanian - shqip</option>
+      <option value="ar">Arabic - ةيبرعلا>/option>
+      <option value="hy">Armenian - հայերեն</option>
+      <option value="ast">Asturian - asturianu</option>
+      <option value="az">Azerbaijani - azərbaycan dili</option>
+      <option value="be">Belarusian - беларуская</option>
+      <option value="bs">Bosnian - bosanski</option>
+      <option value="bg">Bulgarian - български</option>
+      <option value="ca">Catalan - català</option>
+      <option value="zh">Chinese - 中文</option>
+      <option value="co">Corsican</option>
+      <option value="hr">Croatian - hrvatski</option>
+      <option value="cs">Czech - čeština</option>
+      <option value="da">Danish - dansk</option>
+      <option value="nl">Dutch - Nederlands</option>
+      <option value="en">English</option>
+      <option value="en-GB">English (United Kingdom)</option>
+      <option value="en-US">English (United States)</option>
+      <option value="et">Estonian - eesti</option> 
+      <option value="fil">Filipino</option>
+      <option value="fi">Finnish - suomi</option>
+      <option value="fr">French - français</option>
+      <option value="ka">Georgian - ქართული</option>
+      <option value="de">German - Deutsch</option>
+      <option value="de-AT">German (Austria) - Deutsch (Österreich)</option>
+      <option value="el">Greek - Ελληνικά</option>
+      <option value="hu">Hungarian - magyar</option>
+<option value="is">Icelandic - íslenska</option>
+<option value="id">Indonesian - Indonesia</option>
+<option value="ga">Irish - Gaeilge</option>
+<option value="it-IT">Italian (Italy) - italiano (Italia)</option>
+<option value="ja">Japanese - 日本語</option>
+<option value="la">Latin</option>
+<option value="mk">Macedonian - македонски</option>
+<option value="mt">Maltese - Malti</option>
+<option value="pl">Polish - polski</option>
+<option value="pt">Portuguese - português</option>
+<option value="ru">Russian - русский</option>
+<option value="es">Spanish - español</option>
+<option value="sw">Swahili - Kiswahili</option>
+<option value="tr">Turkish - Türkçe</option>
+      </select>
+  </div>
+ 
+  <div style="position: sticky;top: 0;background-color: #fafafb;height: 80px; z-index: 5000;box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.998),  0 0px 5px 0 rgba(0, 0, 0, 0.19)" >
+    <img src="images/newlogo.jpg" id="ingo">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="span">&#9776;</span>
+    
+    <div style="position: absolute;left: 20%;" id="dropID" >
+    <ul style="margin-top: 0;margin-bottom:20px ;" >
+<li onclick="dropdown(1)">
+<p id="color">Banking Services <i class="arrow down"></i></p>
+<p id="colorz">Accounts and Services</p>
+<li>
+
+<li onclick="dropdown(2)">
+  <p id="color">Borrowing  		<i class="arrow down"></i></p>
+  <p id="colorz">Loans and Mortgages</p>
+</li>
+
+<li onclick="dropdown(3)">
+  <p id="color">Investing 	<i class="arrow down"></i> </p>
+  <p id="colorz">Products and Analysis</p>
+</li>
+
+<li onclick="dropdown(4)">
+  <p id="color">Insurance 	<i class="arrow down"></i></p>
+  <p id="colorz">Property and family</p>
+</li>
+
+<li onclick="dropdown(5)">
+  <p id="color" >Life Events 	<i class="arrow down"></i> </p>
+  <p id="colorz">Help and Support</p>
+</li>
+</ul>
+</div>
+
+
+ <!--drop down page 1-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown1">
+  <div id="current" style="border-right: 1px solid #780b54de;position: relative;top:-42%;" >
+    <h2 id="bluez">Current Accounts</h2>
+    <p><a href="capitalguard_acc.html">CapitalGuard account</a></p>
+    <p><a href="advance-acc.html">Advance account</a></p>
+    <p><a href="student_acc.html">Student account</a></p>
+    <p><a href="bank_acc.html">Bank account</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #780b54de; position: relative;top:-42%;">
+    <h2 id="bluez">Savings</h2>
+    <p><a href="savings.html">ISAs</a></p>
+            <p><a href="savings.html">Online bonus saver</a></p>
+            <p><a href="savings.html">flexible saver</a></p><br>
+  </div>
+  <div id="current" style="position: relative;top:-24%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+    <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+    <p><a href="Credit-cards.html">Dual credit card </a></p>
+    <p><a href="classic credit card"></a></p>
+    <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+    <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+    <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #780b54de;color: white; height: 330px;;"class="currentz" >
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="services.html">ways to bank</a></p>
+    <p><a href="services.html">Voice ID</a></p>
+    <p><a href="services.html">Contact and Support</a></p>
+    <p><a href="services.html">Find a branch</a></p>
+    <h2>International Services</h2>
+    <p ><a href="international_services.html">Currency Account</a></p>
+    <p><a href="international_services.html">International payments</a></p>
+    <p><a href="international_services.html">Travel money</a></p>
+  </div>
+  <button onclick="close1()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #780b54de;border-radius: 15px;">Close</button>
+  <script>
+    function close1(){
+    document.getElementById("dropdown1").style.display="none";
+  }
+  </script>
+</div>
+
+
+
+ <!--drop down page2-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown2">
+  <div id="current" style="border-right: 1px solid #780b54de;position: relative;top:-20%;">
+    <h2 id="bluez">Loan</h2>
+    <p><a href="personal-loans.html">personal loan</a></p>
+    <p><a href="car-loans.html">Car loan</a></p>
+    <p><a href="flexible-loan.html">flexiloan</a></p>
+    <p><a href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+    <p><a href="graduate-loan.html">Graduate loan</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #780b54de; position: relative;top:-10%;">
+    <h2 id="bluez">Mortgages</h2>
+    <p><a href="First time buyer.html">First time buyer</a></p>
+    <p><a href="95percent-Mortgages.html">95% Mortgages</a></p>
+    <p><a href="Remortgage.html">Remortgage</a></p>
+    <p><a href="buy to let.html">Buy to let</a></p>
+    <p><a href="mortgage rates.html">Mortgage rates</a></p>
+    <p><a href="armed forces.html">Armed forces personel</a></p>
+  </div>
+  <div id="current" style="position: relative;top:-10%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+            <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+            <p><a href="Credit-cards.html">Dual credit card </a></p>
+            <p><a href="classic credit card"></a></p>
+            <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+            <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+            <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #780b54de;color: white; height: 330px;position: relative;top:-2%;;" class="currentz">
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="borrowingService.html">Help & Support</a></p>
+    <p><a href="borrowingService.html">Money worries</a></p>
+    <h2><a href="borrowingService.html">Tools & Guides</a></h2>
+    <p><a href="borrowingService.html">Overpayment calculator</a></p>
+    <p><a href="borrowingService.html">Base rate information</a></p> 
+    <br><br> 
+  </div>
+  <button onclick="close2()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #780b54de;border-radius: 15px;">Close</button>
+  <script>
+    function close2(){
+    document.getElementById("dropdown2").style.display="none";
+  }
+  </script>
+</div>
+
+  <!--drop down pages3-->
+  <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown3">
+    <div id="current" style="border-right: 1px solid #780b54de;position: relative;top:1%;" >
+      <h2 id="bluez"> Investments</h2>
+      <p><a href="investmentfund.html">Investment Funds</a></p>
+              <p><a href="WorldselectionISA.html">World Selection ISA</a></p>
+              <p><a href="sharedealing.html">Sharedealing</a></p>
+              <p><a href="financial advice.html">CapitalGuard financial advice</a></p>
+              <p><a href="onshoreinvestment.html">Onshore investment bond</a></p>
+              <p><a href="child trust fund.html">Child trust fund</a></p>
+    </div>
+    <div  id="current" style="border-right: 1px solid #780b54de;position: relative;top:-45%;">
+      <h2 id="bluez">Why invest in us</h2>
+      <p><a href="why invest.html">Find out more</a></p>
+    </div>
+    <div id="current" style="position: relative;top:0%">
+
+    </div>
+    <div id="current" style="background-color:  #780b54de;color: white; height: 330px;position: relative;top:-50%;;" class="currentz">
+      <h2 style="margin-top: 25px;" >Customer Support</h2>
+      <p><a href="services.html">Getting Started with Investing</a></p>
+    </div>
+    <button onclick="close3()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #780b54de;border-radius: 15px;">Close</button>
+    <script>
+      function close3(){
+      document.getElementById("dropdown3").style.display="none";
+    }
+    </script>
+  </div>
+
+     <!--drop down page4-->
+     <div style="height: 350px;width: 90%; display: none;"   class="stack" id="dropdown4">
+      <div id="current" style="border-right: 1px solid #780b54de;position: relative;top:-10%">
+        <h2 id="bluez">Insurance</h2>
+        <p><a href="home insurance.html">Home Insurance</a></p>
+        <p><a href="travel insurance.html">Travel Insurance</a></p>
+        <p><a href="student insurance.html">Student Insurance</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #780b54de;">
+        <h2 id="bluez">Life Insurance</h2>
+        <p><a href="life insurance.html">Life Cover</a></p>
+        <p><a href="life insurance.html">Critical Illness Cover</a></p>
+        <p><a href="life insurance.html">Income Cover</a></p>
+        <p><a href="protection telephone advice.html">Telephone Protection Advice</a></p>
+      </div>
+      <div id="current" style="position: relative;top:-9%" >
+        <h2 id="bluez">Insurance Claims</h2>
+        <p><a href="home insurance.html">Home insurance claims</a></p>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <div id="current" style="background-color:  #780b54de;color: white; height: 330px;position: relative;top:-11%" class="currentz">
+        <h2 style="margin-top: 25px;" >CapitalGuard Customers</h2>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <button onclick="close4()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #780b54de;border-radius: 15px;">Close</button>
+      <script>
+        function close4(){
+        document.getElementById("dropdown4").style.display="none";
+      }
+      </script>
+    </div>
+
+    <!--drop down page 5-->
+    <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown5">
+      <div id="current" style="border-right: 1px solid #780b54de;position: relative;top:-40%">
+        <h2 id="bluez">Life Event</h2>
+       <p><a href="berievement.html">Bereavement Support</a></p> 
+        <p><a href="seperation.html">Separation Support</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #780b54de;position: relative;top:-48%">
+        <h2 id="bluez">Planning Tools</h2>
+       <p><a href="review.html">Financial Health Check</a> </p>
+     
+      </div>
+      <div id="current" style="position: relative;top:-55%">
+       
+      </div>
+      <div id="current" style="background-color:  #780b54de;color: white; height: 330px;position: relative;top:-10%" class="currentz">
+        <h2 style="margin-top: 25px;" >Customer Support</h2>
+        <p><a href="services.html">Ways we can help</a></p>
+      
+        <h2 >Individual Review</h2>
+        <p><a href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+      </div>
+      <button onclick="close5()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #780b54de;border-radius: 15px;">Close</button>
+      <script>
+        function close5(){
+        document.getElementById("dropdown5").style.display="none";
+      }
+      </script>
+    </div>
+  </div>
+
+          <div style="height: 400px;background-image: url(images/couple-at-table.jpg);">
+            <div id="upcontainer4">
+            <h2 id="bluez" style="font-weight:30px;">CAPITALGUARD CREDIT CARDS</h2>
+            <P style="font-size: larger;font-weight:30px;">Cards designed with your needs in mind</P>
+            </div>
+            </div>
+            <div style="margin: 2%;">
+            <h1 style=" border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #780b54de;">About our credit cards</h1>
+<p>We have a selection of cards designed for your different needs.</p>
+<p>The table below shows each of the cards and details about them</p>
+<hr style="margin-top: 3%;">
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #780b54de;">Summary info box</h1>
+
+<div id="Features-and-benefits">
+    <h2 style="color: rgb(225, 70, 130);">32 Month Balance Transfer Credit Card</h2>
+    <p>Take control of your finances with a credit card that gives you flexibility to repay what you owe. Plus, the Bank 32 Month Balance Transfer Credit Card offers cashback as well as rewards from your favourite shopping brands – all for no annual fee.</p>
+<h4>Credit is subject to status, affordability and applicable terms and conditions.</h4>
+
+<h2>Card Details</h2>
+<p>0% interest on balance transfers for 32 months from account opening</p> 
+<p>*A 1.4% fee applies on balances transferred (minimum $5) within the first 60 days of account opening.*
+</p>
+<p>0% interest on purchases for 3 months* from account opening</p>
+<p>No annual fee</p>
+<p>*At the end of the promotional period, balance transfers and purchases will revert to the standard variable rate.
+</p>    
+<br>
+<h2 style="color: rgb(225, 70, 130);">DUAL CREDIT CARD</h2>
+<p>Whether you’re transferring a balance or making a big purchase, an interest-free period can give you the flexibility you need. Plus, our Dual Credit Card offers cashback as well as rewards from your favourite shopping brands – all for no annual fee.
+</p> 
+<h4>Credit is subject to status, affordability and applicable terms and conditions.
+</h4>      
+<h2>Card Details</h2>
+<h4>0% interest on balance transfers for 26 months* from account opening</h4> 
+<p>A 2.89% fee applies on balances transferred (minimum $5) within the first 60 days of account opening.*</p>           
+ <h4>0% interest on purchases* for 26 months from account opening</h4> 
+<h4>No annual fee</h4> 
+<br>
+<h2 style="color: rgb(225, 70, 130);">ADVANCE CREDIT CARD</h2>
+<p>Available exclusively for existing Bank Advance customers, this card offers a generous rewards programme with discounts on top brands around the world. Plus, you could enjoy the flexibility of an interest-free period of 32 months on balance transfers – all for no annual fee. Learn more about becoming an Advance customer.
+</p>  
+<h4>Credit is subject to status, affordability and applicable terms and conditions.
+</h4>
+<p>* At the end of the promotional period, balance transfers and purchases will revert to the standard variable rate.
+</p>       
+<h2>Card details</h2>
+<h3>0% interest on balance transfers for 32 months* from account opening</h3>  
+ <p>A 0.6% fee applies on balances transferred (minimum $5) within the first 60 days of account opening.*
+</p>           
+ <h3>0% interest on purchases for 3 months* from account opening</h3>  
+ <p>No annual fee</p>
+<br>
+<h2 style="color: rgb(225, 70, 130);">CLASSIC CREDIT CARD</h2>
+  <p> Whether you need to build or improve your credit rating, the Classic Credit Card could be right for you.
+</p>      
+<h4>Credit is subject to status, affordability and applicable terms and conditions.</p>
+ </h4>
+<h2>Card details</h2>
+  <h4>No annual fee</h4> 
+  <h4> Up to $1,000 credit available</h4>
+ <h4>Build or improve your credit rating</h4> 
+ <p> This card could help you build or improve your credit score over time, if managed well. Your credit score could be harmed if you don't make payments on time and stay within your credit limit.
+</p>
+<br>
+<h2 style="color: rgb(225, 70, 130);">STUDENT VISA CREDIT CARD</h2>
+      <td>
+        <p></p>A Student Credit Card can be a great way to cover unexpected expenses and build a good credit history. It’s available exclusively for existing CapitalGuard Financial Union Student Account customers and has no annual fee.
+        <h4>The CapitalGuard Financial Union Student Credit Card is only available to CapitalGuard Financial Union Student Account customers.
+      </h4>  
+       <h4>Credit is subject to status, affordability and applicable terms and conditions.</h4> 
+       <br>
+  
+       <h2 style="color: rgb(225, 70, 130);">THE CAPITALGUARD CREDIT CARD</h2>
+   <p>Available exclusively for existing CapitalGuard customers, this card brings you a world of travel benefits, a rewards programme and access to CapitalGuard Privileges. If you qualify, you could enjoy interest-free periods on balance transfers and purchases – all for no annual fee.
+</p>     
+<h4>Credit is subject to status, affordability and applicable terms and conditions.
+</h4> 
+<h2>Card details</h2>
+  <h4>0% interest on balance transfers for 18 months* from account opening</h4>  
+   <p>The rate for balance transfers is 0% for 18 months, where the transfer is made within 60 days of account opening. A 1.4% balance transfer fee applies to each balance transferred (minimum $5)*.
+</p>     
+  <h4> 0% interest on purchases for 9 months* from account opening</h4>  
+   <p>At the end of the promotional period, Balance Transfer and Purchases will revert to the standard variable rate.
+</p>     
+   <h4>No annual fee</h4> 
+    <p>*At the end of the promotional period, balance transfers and purchases will revert to the standard variable rate.
+</p>  
+<h2>Benefits</h2>
+    <h4>Earn points when you spend</h4>
+   <p>Earn 1 point for every $1 you spend in Sterling*, and 2 points for every $1 spent in other currencies.
+    *Sterling currency includes transactions made in the country, Jersey, Guernsey and Isle of Man as well as transactions overseas where you choose to pay in Sterling rather than local currency.
+</p>     
+   <h4>CapitalGuard  Rewards for Miles</h4> 
+    <p>Every 2 points are worth the equivalent of 1 Frequent Flyer Mile with our selected partner airlines.
+</p>    
+   <h4>Extended warranty cover</h4> 
+    <p>Get up to 2 years extended warranty on selected household appliances. See below for more details.
+</p>    
+    <h4>CapitalGuard Privileges</h4>
+   <p> A unique collection of special discounts and experiences exclusively for our CapitalGuard Credit Card customers.
+</p>    
+   <h4>Enjoy 24/7 worldwide assistance</h4> 
+   <p>Day or night, help is always at hand if your card is lost or stolen. Wherever you are in the world you can speak to our dedicated team about getting an emergency cash advance.
+</p> 
+ 
+    <h4>Enjoy airport lounge access</h4>
+<p>With membership in the LoungeKey programme, just show your CapitalGuard credit card to gain access to over 750 airport lounges worldwide. Please note, lounges charge $15 per person per visit, subject to availability.
+</p>
+<h4>Free unlimited Wi-Fi</h4>
+<p>Take advantage of free, unlimited and secure Wi-Fi via Boingo. With over 1 million hotspots worldwide, you can connect up to four devices at airports, hotels and more. Sign up with your CapitalGuard Credit Card at http://Bankuk.boingo.com
+</p>
+<h4>Hotel discounts</h4>
+<p>Receive a 10% discount on selected hotels booked with your CapitalGuard Credit Card through Expedia or a 10% discount on over 180,000 hotels booked with your CapitalGuard Credit Card through www.agoda.com/BankPremier. Agoda CapitalGuard benefits. Cardholders also benefit from 12 months’ complimentary Expedia+ Gold Membership.
+</p>
+<h4>Get there with Uber</h4>
+<p>Receive a $20 Uber promo code every time you purchase airline ticket(s) (value of $500 and above) using your CapitalGuard Credit Card.*
+</p> 
+
+
+
+
+</div>
+
+<div id="p">
+<table>
+    <tr style="color: rgb(234, 57, 57);">
+        <th>CARD SERVICE</th>
+        <th>CARD DETAILS</th>
+        <th>REWARDS</th>
+    </tr>
+    <tr>
+        <td>
+            <h2 style="color: rgb(225, 70, 130);">32 Month Balance Transfer Credit Card</h2>
+            <p>Take control of your finances with a credit card that gives you flexibility to repay what you owe. Plus, the Bank 32 Month Balance Transfer Credit Card offers cashback as well as rewards from your favourite shopping brands – all for no annual fee.</p>
+<h4>Credit is subject to status, affordability and applicable terms and conditions.</h4>
+        </td>
+
+        <td>
+<p>0% interest on balance transfers for 32 months from account opening</p> 
+<p>*A 1.4% fee applies on balances transferred (minimum $5) within the first 60 days of account opening.*
+</p>
+ <p>0% interest on purchases for 3 months* from account opening</p>
+<p>No annual fee</p>
+<p>*At the end of the promotional period, balance transfers and purchases will revert to the standard variable rate.
+   </p>    
+ </td>
+
+        <td>
+         <h3>Enjoy cashback and rewards</h3>   
+<p>Earn cashback from your favourite shopping brands with Visa Offers, plus get instant discounts from well-known brands around the world with our home&Away rewards programme.
+</p>    
+    </td>
+
+    </tr>
+
+
+    <tr>
+        <td>
+          <h2 style="color: rgb(225, 70, 130);">ADVANCE CREDIT CARD</h2>
+        <p>Available exclusively for existing Bank Advance customers, this card offers a generous rewards programme with discounts on top brands around the world. Plus, you could enjoy the flexibility of an interest-free period of 32 months on balance transfers – all for no annual fee. Learn more about becoming an Advance customer.
+</p>  
+<h4>Credit is subject to status, affordability and applicable terms and conditions.
+</h4>
+<p>* At the end of the promotional period, balance transfers and purchases will revert to the standard variable rate.
+</p>       
+ </td>
+        <td>
+        <h3>0% interest on balance transfers for 32 months* from account opening</h3>  
+         <p>A 0.6% fee applies on balances transferred (minimum $5) within the first 60 days of account opening.*
+</p>           
+         <h3>0% interest on purchases for 3 months* from account opening</h3>  
+         <p>No annual fee</p> 
+        </td>
+        <td>
+        <p> Enjoy global discounts</p> 
+<p>Earn cashback from your favourite shopping brands with Visa Offers, plus get instant discounts from well-known brands around the world with our home&Away rewards programme. For all offers check out the home&away website.
+</p>        </td>
+    </tr>
+
+    <tr>
+        <td>
+          <h2 style="color: rgb(225, 70, 130);">DUAL CREDIT CARD</h2>
+         <p>Whether you’re transferring a balance or making a big purchase, an interest-free period can give you the flexibility you need. Plus, our Dual Credit Card offers cashback as well as rewards from your favourite shopping brands – all for no annual fee.
+</p> 
+<h4>Credit is subject to status, affordability and applicable terms and conditions.
+</h4>        </td>
+        <td>
+         <h4>0% interest on balance transfers for 26 months* from account opening</h4> 
+         <p>A 2.89% fee applies on balances transferred (minimum $5) within the first 60 days of account opening.*</p>           
+          <h4>0% interest on purchases* for 26 months from account opening</h4> 
+         <h4>No annual fee</h4> 
+        </td>
+        <td>
+          <h4>Enjoy global discounts</h4>
+<p>Earn cashback from your favourite shopping brands with Visa Offers, plus get instant discounts from well-known brands around the world with our home&Away rewards programme.
+</p>      
+  </td>
+    </tr>
+    <tr>
+        <td><h2 style="color: rgb(225, 70, 130);">CLASSIC CREDIT CARD</h2>
+         <p> Whether you need to build or improve your credit rating, the Classic Credit Card could be right for you.
+</p>      
+    <h4>Credit is subject to status, affordability and applicable terms and conditions.</p>
+        </h4>
+
+        <td>
+         <h4>No annual fee</h4> 
+         <h4> Up to $1,000 credit available</h4>
+        <h4>Build or improve your credit rating</h4> 
+        <p> This card could help you build or improve your credit score over time, if managed well. Your credit score could be harmed if you don't make payments on time and stay within your credit limit.
+</p>
+        </td>
+        <td>
+         <h4>Enjoy global discounts</h4> 
+<p>Earn cashback from your favourite shopping brands with Visa Offers, plus get instant discounts from well-known brands around the world with our home&Away rewards programme.
+</p>       
+ </td>
+    </tr>
+
+    <tr>
+   <td><h2 style="color: rgb(225, 70, 130);">STUDENT VISA CREDIT CARD</h2>
+      <td>
+        <p></p>A Student Credit Card can be a great way to cover unexpected expenses and build a good credit history. It’s available exclusively for existing CapitalGuard Financial Union Student Account customers and has no annual fee.
+        <h4>The CapitalGuard Financial Union Student Credit Card is only available to CapitalGuard Financial Union Student Account customers.
+      </h4>  
+       <h4>Credit is subject to status, affordability and applicable terms and conditions.</h4> 
+
+      </td>
+      <td>
+
+      </td>
+  </tr>
+</table>
+</div>
+<hr style="margin-top: 3%;" id="p">
+<h1 id="p" style=" border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #780b54de;">THE CAPITALGUARD CREDIT CARD</h1>
+<div id="p">
+<table>
+  <tr >
+    <th>CARD SERVICE</th>
+    <th>CARD DETAILS</th>
+    <th>REWARDS</th>
+    <th>Travel benefits</th>
+</tr>
+<tr>
+  <td>
+    <h2 style="color: rgb(225, 70, 130);">THE CAPITALGUARD CREDIT CARD</h2>
+   <p>Available exclusively for existing CapitalGuard customers, this card brings you a world of travel benefits, a rewards programme and access to CapitalGuard Privileges. If you qualify, you could enjoy interest-free periods on balance transfers and purchases – all for no annual fee.
+</p>     
+<h4>Credit is subject to status, affordability and applicable terms and conditions.
+</h4> 
+ </td>
+  <td>
+  <h4>0% interest on balance transfers for 18 months* from account opening</h4>  
+   <p>The rate for balance transfers is 0% for 18 months, where the transfer is made within 60 days of account opening. A 1.4% balance transfer fee applies to each balance transferred (minimum $5)*.
+</p>     
+  <h4> 0% interest on purchases for 9 months* from account opening</h4>  
+   <p>At the end of the promotional period, Balance Transfer and Purchases will revert to the standard variable rate.
+</p>     
+   <h4>No annual fee</h4> 
+    <p>*At the end of the promotional period, balance transfers and purchases will revert to the standard variable rate.
+</p>  
+</td>
+  <td>
+    <h4>Earn points when you spend</h4>
+   <p>Earn 1 point for every $1 you spend in Sterling*, and 2 points for every $1 spent in other currencies.
+    *Sterling currency includes transactions made in the country, Jersey, Guernsey and Isle of Man as well as transactions overseas where you choose to pay in Sterling rather than local currency.
+</p>     
+   <h4>CapitalGuard  Rewards for Miles</h4> 
+    <p>Every 2 points are worth the equivalent of 1 Frequent Flyer Mile with our selected partner airlines.
+</p>    
+   <h4>Extended warranty cover</h4> 
+    <p>Get up to 2 years extended warranty on selected household appliances. See below for more details.
+</p>    
+    <h4>CapitalGuard Privileges</h4>
+   <p> A unique collection of special discounts and experiences exclusively for our CapitalGuard Credit Card customers.
+</p>    
+   <h4>Enjoy 24/7 worldwide assistance</h4> 
+   <p>Day or night, help is always at hand if your card is lost or stolen. Wherever you are in the world you can speak to our dedicated team about getting an emergency cash advance.
+</p> 
+  </td>
+  <td>
+    <h4>Enjoy airport lounge access</h4>
+<p>With membership in the LoungeKey programme, just show your CapitalGuard credit card to gain access to over 750 airport lounges worldwide. Please note, lounges charge $15 per person per visit, subject to availability.
+</p>
+<h4>Free unlimited Wi-Fi</h4>
+<p>Take advantage of free, unlimited and secure Wi-Fi via Boingo. With over 1 million hotspots worldwide, you can connect up to four devices at airports, hotels and more. Sign up with your CapitalGuard Credit Card at http://Bankuk.boingo.com
+</p>
+<h4>Hotel discounts</h4>
+<p>Receive a 10% discount on selected hotels booked with your CapitalGuard Credit Card through Expedia or a 10% discount on over 180,000 hotels booked with your CapitalGuard Credit Card through www.agoda.com/BankPremier. Agoda CapitalGuard benefits. Cardholders also benefit from 12 months’ complimentary Expedia+ Gold Membership.
+</p>
+<h4>Get there with Uber</h4>
+<p>Receive a $20 Uber promo code every time you purchase airline ticket(s) (value of $500 and above) using your CapitalGuard Credit Card.*
+</p> 
+ </td>
+</tr>
+</table></div>
+<hr style="margin-top: 3%;">
+<div style="padding: 30px;" id="shift">
+<h2 style="color: rgb(237, 11, 82);">Using your card</h2>
+<h4>Make contactless transactions</h4>
+<p>Your card is contactless and you can add it to Apple Pay, Google Pay and Samsung Pay.</p>
+
+<h4>Manage your card online</h4>
+<p>Online Service is a convenient way to manage your card. It lets you check your credit card balance, make payments and stay in control.
+</p>
+<h4>Get an additional card</h4>
+<p>As long as they’re over 18, you can add your partner or a family member to your account.
+</p>
+<h4>Use your card abroad</h4>
+<p>You can use your Credit Card at any retailer or cash machine that displays the logo on your card. Fees apply and non- cash machines may also charge a fee.
+</p>
+<h4>Enjoy 24/7 worldwide assistance</h4>
+<p>Day or night, help is always at hand if your card is lost or stolen. Wherever you are in the world, you can speak to our dedicated support team about getting an emergency cash advance.
+
+</p>
+</div>
+<h2 style=" border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #780b54de;">THE CAPITALGUARD CREDIT CARD POINTS</h2>
+
+<button style="text-align: left;padding-left: 15px;border: 0px solid #780b54de;height: 40px;width: 100%;background-color: #780b54de;color: white;margin-top: 10px;margin-bottom: 10px;">Using your reward points</button>
+<div id="Features-and-benefits">
+  <h2 style="color: rgb(237, 11, 82);">Rewards for miles</h2>
+  <p>We've partnered with British Airways, Etihad, Asia Miles and Singapore Airlines so you can convert your CapitalGuard Reward points into your dream getaway.
+  </p>
+  <br>
+  <h2 style="color: rgb(237, 11, 82);">Vouchers</h2>
+      <p>You can redeem your points for vouchers from M&S, Amazon, Debenhams, Sainsbury's, Boots, Argos and Morrisons. Even better, we'll deliver them straight to your door.</p>
+   <br>
+   <h2 style="color: rgb(237, 11, 82);">Fine wines</h2>
+   <p>You can also exchange your points for a special selection of Laithwaite's quality wines, delivered direct to your home or office.<br>
+
+     Just call 03330 148 174* quoting reference MP85 to pay by points only or MC85 to pay by points and cash.</p>
+<br>
+<h2 style="color: rgb(237, 11, 82);"> Charity</h2>
+<p>You might also want to consider donating your points to a good cause. Every 1,500 points is worth $5 of vital support for charities all over the world, including Age UK, British Heart Foundation and the Alzheimer's Society.**
+</p> 
+
+</div>
+<table id="p">
+  <tr>
+    <td><img src="images/accord1.jpg" alt="accord1" height="170px"></td>
+    <td>
+      <h2 style="color: rgb(237, 11, 82);">Rewards for miles</h2>
+<p>We've partnered with British Airways, Etihad, Asia Miles and Singapore Airlines so you can convert your CapitalGuard Reward points into your dream getaway.
+</p>   
+ </td>
+  </tr>
+  <tr>
+    <td><img src="images/accord3.jpg" alt="accord1" height="170px"></td>
+    <td>
+      <h2 style="color: rgb(237, 11, 82);">Vouchers</h2>
+      <p>You can redeem your points for vouchers from M&S, Amazon, Debenhams, Sainsbury's, Boots, Argos and Morrisons. Even better, we'll deliver them straight to your door.</p>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/accord2.jpg" alt="accord1" height="170px"></td>
+    <td>
+      <h2 style="color: rgb(237, 11, 82);">Fine wines</h2>
+      <p>You can also exchange your points for a special selection of Laithwaite's quality wines, delivered direct to your home or office.<br>
+
+        Just call 03330 148 174* quoting reference MP85 to pay by points only or MC85 to pay by points and cash.</p>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="images/accord4.jpg" alt="accord1" height="170px"></td>
+    <td>
+      <h2 style="color: rgb(237, 11, 82);"> Charity</h2>
+<p>You might also want to consider donating your points to a good cause. Every 1,500 points is worth $5 of vital support for charities all over the world, including Age UK, British Heart Foundation and the Alzheimer's Society.**
+</p>    </td>
+  </tr>
+</table>
+<button style="text-align: left;padding-left: 15px;border: 0px solid #780b54de;height: 40px;width: 100%;background-color: #780b54de;color: white;margin-top: 10px;margin-bottom: 10px;">How to convert your point for airmiles</button>
+<h4>-Log on to Online Service<br>
+-Choose CapitalGuard Card within the My Accounts section. Then choose Points Balance from the right hand menu.<br>
+-Select Continue under Airlines miles, on the list of Points Redemption Options or Join airline programme if you are not currently part of an airline programme<br>
+-Select the airline you wish to redeem your Points with.<br>
+-Insert your details, including your airline programme number and submit your request. Please allow up to 14 days for your request to be processed.<br>
+</h4>
+<button style="text-align: left;padding-left: 15px;border: 0px solid #780b54de;height: 40px;width: 100%;background-color: #780b54de;color: white;margin-top: 10px;margin-bottom: 10px;">How to redeem your points</button>
+<p>Redeem your points online or contact our customer care.</p>
+
+<button style="text-align: left;padding-left: 15px;border: 0px solid #780b54de;height: 40px;width: 100%;background-color: #780b54de;color: white;margin-top: 10px;margin-bottom: 10px;">Protecting your purchases with extended warranty cover</button>
+<p>Shop with greater peace of mind, thanks to a two-year extended warranty on selected household purchases such as LCD and plasma screen televisions, digital cameras, satellite navigation systems, washing machines, iPods & iTouch bought using your CapitalGuard Credit Card. You can register up to 3 appliances per calendar year.
+</p>
+<p>To qualify for the Extended Warranty, appliances must cost between $50 and $2,000, be purchased in full with your CapitalGuard Credit Card and be registered within 90 days of purchase. You can register onlineregister online for Extended Warranty This link will open in a new window or call *. We recommend you call before you make a purchase as some items are excluded from this cover.
+</p>
+<p>Cover is provided by Domestic & General Insurance PLC and is only available to residents of the country, the Channel Islands and the Isle of Man. Policy terms and conditions (PDF, 182KB)
+</p>
+<p>* Telephone lines are open 8am to 8pm every day (except Christmas Day, Boxing Day and New Year's Day). Calls may be monitored or recorded.
+</p>
+
+<hr style="margin-top: 40px;">
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #780b54de;">Apply for CapitalGuard Credit Card</h1>
+<p>CapitalGuard is available to you, if you pay your annual income into your CapitalGuard Account and have either:
+</p>
+<h4>savings or investments of at least $50,000 with in the country; or</h4>
+<h4>an individual annual income of at least $75,000 and one of the following products with UK: a mortgage, investment, life insurance or protection product;
+</h4>
+<p>Or if you’ve already qualified for CapitalGuard in another country.</p>
+<button style="border: 0px solid rgb(244, 37, 72);border-radius: 5px;height: 40px;width: 200px;background-color: rgb(101, 167, 15);color:rgb(11, 11, 11)e;"><a href="services.html">Apply now</a></button>
+
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #780b54de;">Apply for the Other Credit Cards</h1>
+
+<h2 style="padding-left: 10px;color: rgb(52, 89, 4);">Apply online or in branch</h2>
+<div style="margin-bottom: 3%;">
+<p>you can apply for all credit cards either online or in branch, you can also apply by phone call
+</p>
+  
+<button style="border: 0px solid rgb(244, 37, 72);border-radius: 5px;height: 40px;width: 200px;background-color: rgb(101, 167, 15);color: rgb(15, 14, 14);"><a href="services.html">Apply now</a></button>
+
+</div>
+</div>
+
+<div style="height: 150px;box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.998),  0 6px 15px 0 rgba(0, 0, 0, 0.19)">
+  <div style="margin-left: 8%;padding-top: 20px;">
+    <h1 style="color:#780b54de">Connect with us</h1>
+<p>Listening to what you have to say about our services matters to us.</p></div>
+
+</div>
+
+<div id="foots">
+  <div id="footer" >
+  <div>
+  <h3>HELP AND SUPPORT </h3>
+  <p>Got a question? We are here to help <br>you</p>
+</div>
+    
+<div>
+  <h3>OUR PERFORMANCE</h3>
+  <p>Get information about our <br> performance</p>
+</div>
+  
+<div>
+ <h3>ABOUT CAPITALGUARD BANK</h3>
+  <p>Careers, media, investor and corporate information</p>
+</div>
+</div>
+  
+  <div>
+      <p style="text-align: center;">
+        Federally-insured by the National Credit Administration. we do business in accordance with the Fair Law and Equal oppurtunity Credit Act.
+      </p>
+      <br>
+      <p style="text-align: center;margin-top: 0%;">PO Box: Ermyn Way, Leatherhead KT24 6UX</p>
+    </div>
+    <img id="imago" src="images/newlogo.jpg" alt="logo" style="height: 80px;width: 80px; position: relative;top: -15%;left: 12%;">
+  
+    <p style="text-align: center; color: rgb(216, 211, 211);">© 2023 CapitalGuard Bank- All rights reserved.</p>
+  
+</div>
+
+  <div id="mySidenav" class="sidenav">
+    <h3 style="color: white;text-align: center;">Menu</h3>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button onclick="smallscreen(1)" id="but1" ><p><b>Banking Services (Accounts and Services)</b></p></button>
+    <div id="smalla1" class="divas2" >
+<div >
+        <p style="color: #1af33bde;">Current Accounts</p>
+        <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="capitalguard_acc.html">CapitalGuard account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="advance-acc.html">Advance account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="student_acc.html">Student account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="bank_acc.html">Bank account</a></p>
+      <hr>
+        <p style="color: #1af33bde;">Savings</p>
+        <p> <a style="font-size: smaller;padding: 0;margin-left: 10px;" href="savings.html">ISAs</a></p>
+                <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">Online bonus saver</a></p>
+                <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">flexible saver</a></p><br>
+     <hr>
+        <p style="color: #1af33bde;">Credit cards</p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">32 month transfer credit card</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Advance Credit Card</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Dual credit card </a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="classic credit card"></a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard credit card</a> </p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Student credit card</a></p>
+     <hr>
+        <p  style="color: #1af33bde;">Services</p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">ways to bank</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Voice ID</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Contact and Support</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Find a branch</a></p>
+        <p style="color: #1af33bde;">International Services</p>
+        <p ><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Currency Account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">International payments</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Travel money</a></p>
+  
+      </div>
+    </div>
+    
+      <button onclick="smallscreen(2)"  id="but1" ><p><b>Borrowing ( Loans and Mortgages) </b></p></button>
+      <div id="smalla2" class="divas2">
+        <div >
+          <p style="color: #1af33bde;">Loan</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="personal-loans.html">personal loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car-loans.html">Car loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="flexible-loan.html">flexiloan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="graduate-loan.html">Graduate loan</a></p>
+       <hr>
+        <p style="color: #1af33bde;">Mortgages</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="First time buyer.html">First time buyer</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="95percent-Mortgages.html">95% Mortgages</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Remortgage.html">Remortgage</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="buy to let.html">Buy to let</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="mortgage rates.html">Mortgage rates</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="armed forces.html">Armed forces personel</a></p>
+     
+       <hr>
+          <p style="color: #1af33bde;">Credit cards</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">32 month transfer credit card</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Advance Credit Card</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Dual credit card </a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="classic credit card"></a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard credit card</a> </p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Student credit card</a></p>
+       <hr>
+       <p style="color: #1af33bde;" >Services</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Help & Support</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Money worries</a></p>
+          <p style="color: #1af33bde;" >Tools & Guides</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Overpayment calculator</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Base rate information</a></p> 
+          
+        </div>
+      </div>
+
+        <button onclick="smallscreen(3)"  id="but1"><p><b> Investing  (Products and Analysis) </b></p></button>
+        <div id="smalla3" class="divas2">
+          <p style="color: #1af33bde;"> Investments</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="investmentfund.html">Investment Funds</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="WorldselectionISA.html">World Selection ISA</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="sharedealing.html">Sharedealing</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="financial advice.html">CapitalGuard financial advice</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="onshoreinvestment.html">Onshore investment bond</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="child trust fund.html">Child trust fund</a></p>
+      
+      <hr>
+          <p style="color: #1af33bde;">Why invest in us</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="why invest.html">Find out more</a></p>
+      
+        <hr>
+         <p style="color: #1af33bde;" >Customer Support</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Getting Started with Investing</a></p>
+    
+        </div>
+
+          <button onclick="smallscreen(4)"  id="but1" ><p><b> Insurance  (Property and family) </b></p>  </button>
+          <div id="smalla4" class="divas2">
+            <p style="color: #1af33bde;">Insurance</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home Insurance</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel Insurance</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="student insurance.html">Student Insurance</a></p>
+  
+          <hr>
+            <p style="color: #1af33bde;">Life Insurance</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Life Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Critical Illness Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Income Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="protection telephone advice.html">Telephone Protection Advice</a></p>
+        
+        <hr>
+        <p style="color: #1af33bde;">Insurance Claims</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+      
+         <hr>
+         <p style="color: #1af33bde;">CapitalGuard Customers</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+         
+          </div>
+            <button onclick="smallscreen(5)"  id="but1" ><p><b> Life Events   ( Help and Support) </b></p> </button>
+            <div id="smalla5" class="divas2">
+              <p style="color: #1af33bde;">Life Event</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="berievement.html">Bereavement Support</a></p> 
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="seperation.html">Separation Support</a></p>
+            <hr>
+            <p style="color: #1af33bde;">Planning Tools</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Financial Health Check</a> </p>
+            
+              <p style="color: #1af33bde;">Customer Support</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="services.html">Ways we can help</a></p>
+             
+               <p style="color: #1af33bde;">Individual Review</p>
+               <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+      </div>
+<script src="student.js"></script>
+            <script src="index.js"></script>
+
+              <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/650724a4b1aaa13b7a77579c/1hahue9nt';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      
+      </script>
+      <!--End of Tawk.to Script-->
+    </body>
+    </html>

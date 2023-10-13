@@ -1,0 +1,184 @@
+html,body{
+  margin: 0;
+  padding: 0;
+
+}
+
+  #dashbod1{
+    width: 25%;
+    height: 100%;
+    background-color: #f5eef3de;;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #dbcdd6de;
+    z-index: 1;
+    color: #3b0629de;
+  }
+  #dashbod2{
+    width: 75%;
+    height: 100%;
+   position: fixed;
+   right: 0;
+   top: 0;
+  }
+  #underdash{
+    height: 500px;
+    overflow: scroll;
+    padding: 10px;
+  }
+  #none{
+    display: none;
+   }
+  .standby{
+    display: block;
+  }
+
+  .hook{
+    display: none;
+  }
+
+  
+#union{
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin-left: -3%;
+}
+
+#union > div {
+width: 44%;
+height: 150px;
+margin-right: 10px;
+}
+
+#btn1{
+  background-color: #780b54de;height: 40px;font-size: small;
+  border: 0px solid #780b54de ;color: white;width: 100px;border-radius: 5px;
+}
+#btn1:hover{
+  background-color: #e254b3de;
+}
+
+#btn2{
+  background-color: #e90808de;height: 40px;font-size: small;
+  border: 0px solid #780b54de ;color: white;width: 120px;border-radius: 5px;
+}
+#btn2:hover{
+  background-color: #f43d3dde;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 17px;
+  padding-bottom: 15px;
+  margin-left: -15%;
+}
+
+li a {
+  text-decoration: none;
+  color: #610342de;
+  font-weight: bolder;
+}
+li a:hover{
+  color:white;
+  background-color: #780b54de;
+  padding: 10px;
+ border-radius: 10px;
+}
+
+#one{
+  height: 700px;
+  padding: 10px;
+}
+#switch:hover{
+  background-color: rgb(162, 9, 9);
+}
+
+
+#upperbase{
+  width: 250px;
+  height: 370px;
+  z-index: 2000;
+  position: absolute;
+  right: 3%;
+  top: 12%;
+  border-top: 4px solid #e254b3de;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px 3px #c1bfc1de;
+  background-color: white;
+}
+#upperli li {
+font-size: 13px;
+color: rgb(99, 113, 113);
+padding-top: 15px;
+}
+
+  
+#union1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+#union1 > div {
+width: 44%;
+height: 150px;
+margin-right: 10px;
+}
+#btn11{
+  background-color: #780b54de;height: 40px;float: right;margin-top: 20px;font-size: 13px;
+  border: 0px solid #780b54de ;color: white;width: 100px;border-radius: 5px;width: 120px;
+}
+#btn11:hover{
+  background-color: #e254b3de;
+}
+
+#btn22{
+  background-color: #e90808de;height: 40px;float: right;margin-right: 20px;margin-top: 20px;
+  border: 0px solid #780b54de ;color: white;width: 120px;border-radius: 5px;font-size: small;width: 120px;
+}
+#btn22:hover{
+  background-color: #f43d3dde;
+}
+#support{
+  background-color: white;height: 30px;
+border-radius: 7px;color: #480431de;border: 1.2px solid #780b54de;
+}
+#support:hover{
+  background-color:#780b54de ;
+  color: white;
+}
+#union3{
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+#union3 > div {
+height: 80px;
+}
+
+
+
+#deposit > a:hover{
+background-color:#d81111de;
+color: white;
+}
+#Features-and-benefits{
+  display: none;
+}
