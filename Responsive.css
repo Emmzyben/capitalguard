@@ -355,13 +355,16 @@ display: none;
         height: 100px;
     }
 .bot1{
-    position: absolute;left: 5%;top: 1%;
+    position: absolute;left: 5%;top: 0.7%;
 }
 .bot2{
-    position: absolute;left: 25%;top: 1%;
+    position: absolute;left: 25%;top: 0.7%;
 }
 .bot11{
-  position: absolute;left: 43%;top: 1%;
+  position: absolute;left: 43%;top: 0.7%;
+}
+#google_translate_element{
+  position: absolute;left: 0%;top: 0.5%;
 }
 #languages{
    display: none;
