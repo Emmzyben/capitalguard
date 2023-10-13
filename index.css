@@ -4,7 +4,13 @@ body{
 }
 #starter{
     background-color: #780b54de;
-    height: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#starter>div{
+  margin-left: 30px;
+  padding-top: 40px;
 }
 #color{
     font-size: larger;
@@ -153,13 +159,13 @@ aside > div{
     position: absolute;
     height: 355px;
     width: 50%;
-    top: 41%;
+    top:10%;
     left: 7%;
   }
 
   #formz{
     position: absolute;
-    top: 30%;
+    top: 6%;
     right: 7%;
   }
 
@@ -584,3 +590,4 @@ left: 6%;top: 50%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 
   .material-icons{
     display: none;
   }
+ 
