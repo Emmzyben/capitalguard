@@ -201,7 +201,58 @@ background-color: rgb(236, 106, 145);
             padding: 10px;
             
         }
+        #links{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 10px;
+  left: 4%;
+}
+#links > div{
+  margin-right: 5px;
+}
+#translate-button-wrapper{
+  position: relative;
+  left: 1%;
+ 
+}
+
+@media only screen and (max-width: 1000px) { 
+#upcontainer{
+  height: 80px;width: 300px;
+  background-color: white;position: absolute;padding: 10px;
+  left: 10%;top: 10%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+}
+#upcontainer3{
+  height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  }
+  #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8%
+    ;  }
+    
+}
+@media only screen and (max-width: 600px) {
+  #upcontainer3{
+    height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+   }
+
+   #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8%;  }  
+}
+
+#upcontainer5{height: 100px;width: 300px;
+  background-color: white;padding: 20px;
+     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  position: relative;top: 20%;left: 10%;
+    }
+
 </style>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <!--ICON-->
 <link rel="shortcut icon" href="images/newlogo.jpg">
 <link rel="stylesheet" href="index.css">
@@ -214,59 +265,22 @@ background-color: rgb(236, 106, 145);
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
   <body>
-   <div id="starter">
-  <h3 id="needhelp">Need help? Contact Us</h3>
- <p id="p1"><a style="color: white;"  href="mailto:capitalg@capitalguard.cc"> capitalg@capitalguard.cc</a></p>
-   <i  class="material-icons" style="padding-left:255px ;position: relative;top: -45%;color: #f31a1ade ;">mail_outline</i>
-   <button id="botnz" class="bot1"><a href="sign-in.html" style="color: white;">Sign in</a></button>
-   <button id="botnzz" class="bot11"><a href="register.html" style="color: white;">Sign up</a></button>
-   <button id="botnz" class="bot2"><a href="index.html" style="color: white;">Home</a></button>
-   <select id="languages" name="languages"   >
-      <option>Select Language</option>
-      <option value="af">Afrikaans</option>
-      <option value="sq">Albanian - shqip</option>
-      <option value="ar">Arabic - ةيبرعلا>/option>
-      <option value="hy">Armenian - հայերեն</option>
-      <option value="ast">Asturian - asturianu</option>
-      <option value="az">Azerbaijani - azərbaycan dili</option>
-      <option value="be">Belarusian - беларуская</option>
-      <option value="bs">Bosnian - bosanski</option>
-      <option value="bg">Bulgarian - български</option>
-      <option value="ca">Catalan - català</option>
-      <option value="zh">Chinese - 中文</option>
-      <option value="co">Corsican</option>
-      <option value="hr">Croatian - hrvatski</option>
-      <option value="cs">Czech - čeština</option>
-      <option value="da">Danish - dansk</option>
-      <option value="nl">Dutch - Nederlands</option>
-      <option value="en">English</option>
-      <option value="en-GB">English (United Kingdom)</option>
-      <option value="en-US">English (United States)</option>
-      <option value="et">Estonian - eesti</option> 
-      <option value="fil">Filipino</option>
-      <option value="fi">Finnish - suomi</option>
-      <option value="fr">French - français</option>
-      <option value="ka">Georgian - ქართული</option>
-      <option value="de">German - Deutsch</option>
-      <option value="de-AT">German (Austria) - Deutsch (Österreich)</option>
-      <option value="el">Greek - Ελληνικά</option>
-      <option value="hu">Hungarian - magyar</option>
-<option value="is">Icelandic - íslenska</option>
-<option value="id">Indonesian - Indonesia</option>
-<option value="ga">Irish - Gaeilge</option>
-<option value="it-IT">Italian (Italy) - italiano (Italia)</option>
-<option value="ja">Japanese - 日本語</option>
-<option value="la">Latin</option>
-<option value="mk">Macedonian - македонски</option>
-<option value="mt">Maltese - Malti</option>
-<option value="pl">Polish - polski</option>
-<option value="pt">Portuguese - português</option>
-<option value="ru">Russian - русский</option>
-<option value="es">Spanish - español</option>
-<option value="sw">Swahili - Kiswahili</option>
-<option value="tr">Turkish - Türkçe</option>
-      </select>
-  </div>
+  <div id="starter">
+      <h3 id="needhelp">Contact Us:  <a style="color: white;font-weight: lighter;font-size: small;"  href="mailto:capitalg@capitalguard.cc"> capitalg@capitalguard.cc</a></h3>
+     <div id="links">
+      <div><button id="botnz"><a href="index.html" style="color: white;">Home</a></button></div>  
+     <div><button id="botnz" ><a href="sign-in.html" style="color: white;">Sign in</a></button></div>  
+     <div><button id="botnzz" ><a href="register.html" style="color: white;">Sign up</a></button></div>  
+     <div id="translate-button-wrapper">
+      <div id="google_translate_element"></div>
+    </div>
+       <script type="text/javascript">
+       function googleTranslateElementInit() {
+         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+       }
+       </script>
+    </div>
+      </div>
  
   <div style="position: sticky;top: 0;background-color: #fafafb;height: 80px; z-index: 5000;box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.998),  0 0px 5px 0 rgba(0, 0, 0, 0.19)" >
     <img src="images/newlogo.jpg" id="ingo">
@@ -893,19 +907,8 @@ background-color: rgb(236, 106, 145);
 <script src="register.js"></script>
     <script src="index.js"></script>
 
-      <!--Start of Tawk.to Script-->
-      <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/650724a4b1aaa13b7a77579c/1hahue9nt';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-        
-        </script>
-        <!--End of Tawk.to Script-->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e587ef1-2546-44bf-a34f-91dd266b8881";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+      
                 </body>
                 </html>
